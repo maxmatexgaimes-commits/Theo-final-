@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(#dff1ff, #fde4ec);
+  overflow-x: hidden;
+}
+
+/* MUNDO */
+.mundo {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.boneco {
+  position: absolute;
+  bottom: 60px;
+  font-size: 45px;
+  animation: andar 18s linear infinite;
+}
+
+.b1 { left: -10%; }
+.b2 { left: -30%; animation-delay: 5s; }
+
+.chao {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: #b5e6b5;
+}
+
+@keyframes andar {
+  to { transform: translateX(130vw); }
+}
+
+/* INÍCIO */
+.inicio {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inicio button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background: #f48fb1;
+  color: white;
+  font-size: 18px;
+}
+
+/* CARTA */
+.carta {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin: auto;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 25px;
+}
+
+.texto {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.foto {
+  position: relative;
+  margin: 30px 0;
+}
+
+.foto img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.foto span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.8);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.contador {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 30px;
+}
+
+.final {
+  text-align: center;
+  font-size: 20px;
+  color: #c2185b;
+  margin-top: 50px;
+}
+
+.hidden { display: none; }
